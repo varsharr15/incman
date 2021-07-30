@@ -1,0 +1,238 @@
+html {
+    position: relative;
+  }
+  
+  /* RESET */
+  h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    vertical-align: baseline;
+  }
+  
+  table {
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* BASE STYLE */
+  .App {
+    font-family: 'Lato', sans-serif;
+    padding: 0 15px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .App-title {
+    font-family: 'Lustria', serif;
+    font-size: 42px;
+    text-align: center;
+    padding: 5px;
+    margin: 10px 0;
+  }
+  
+  .Search-input {
+    height: 30px;
+    padding: 14px;
+    border-top: 1px solid #315b96;
+    border-left: 1px solid #315b96;
+    border-right: 0;
+    border-bottom: 1px solid #315b96;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+    box-sizing: border-box;
+  }
+  
+  .Search-submit {
+    padding: 0 10px;
+    height: 30px;
+    text-align: center;
+    background-color: #315b96;
+    border: 0;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+    box-sizing: border-box;
+  }
+  
+  .Cards-today {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .Result-info {
+    font-size: 20px;
+    padding: 5px;
+    margin-top: 20px;
+  }
+  
+  .Loader {
+    margin: 20px 20px 0 20px;
+    border: 10px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 10px solid #1089ff;
+    width: 40px;
+    height: 40px;
+    animation: spin 2s linear infinite;
+  }
+  
+  @keyframes spin {
+    0% {transform: rotate(0deg);}
+    100% {transform: rotate(360deg);}
+  }
+  
+  .City-name {
+    font-size: 34px;
+    padding: 5px;
+  }
+  
+  .Card-today {
+    width: 500px;
+    margin: 10px;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    border: 1px solid #d4d7dd;
+    border-radius: 25px;
+    box-shadow: 2px 2px 6px rgb(236, 244, 243);
+    box-sizing: border-box;
+  }
+  
+  .Card-today > .Weather-cond {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-left: 1px solid #ccc;
+  }
+  
+  .Weather-cond > .Weather-main, .Weather-desc {
+    font-size: 16px;
+    box-sizing: border-box;
+  }
+  
+  .Weather-cond > img {
+    padding: 5px;
+  }
+  
+  .Weather-cond > .Temperature-cond {
+    padding: 5px;
+    font-size: 22px;
+    font-weight: bold;
+    box-sizing: border-box;
+  }
+  
+  .Card-today > .Weather-details {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-right: 1px solid #ccc;
+  }
+  
+  .Weather-details > .Date-time {
+    padding: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    box-sizing: border-box;
+  }
+  
+  .Weather-details > table {
+    width: 100%;
+    padding: 5px;
+    box-sizing: border-box;
+  }
+  
+  .Cards-next-five {
+    margin-bottom: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .Card-next-five {
+    width: 220px;
+    margin: 10px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid #d4d7dd;
+    border-radius: 25px;
+    box-shadow: 2px 2px 6px rgb(236, 244, 243);
+    box-sizing: border-box;
+  }
+  
+  .Card-next-five > .Date-time {
+    padding: 5px;
+    font-size: 15px;
+    font-weight: bold;
+    box-sizing: border-box;
+  }
+  
+  .Card-next-five > .Weather-desc, .Humid {
+    font-style: italic;
+  }
+  
+  .Card-next-five > .Temperature-cond {
+    font-size: 20px;
+    font-weight: bold;
+  }
+  
+  .App-footer {
+    margin: 20px 0;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .App-footer > p {
+    margin-bottom: 10px;
+  }
+  
+  .App-footer > p > a {
+    text-decoration: none;
+    font-weight: bolder;
+  }
+  
+  .Heart {
+    color: red;
+  }
+  
+  .Cards-info {
+    margin: 20px 20px 0 20px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .Card-info {
+    width: 200px;
+    padding: 10px;
+    text-align: center;
+    color: white;
+    background-color: #1089ff;
+    border-radius: 10px;
+  }
+  
+  .Card-danger {
+    width: 200px;
+    padding: 10px;
+    text-align: center;
+    color: white;
+    background-color: #ef4b4b;
+    border-radius: 10px;
+  }
+  
+  
+  
+  
